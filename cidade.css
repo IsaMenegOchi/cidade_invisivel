@@ -1,0 +1,40 @@
+/* Fazer esse geral para retirar os padões dos navegadores, tendo em vits que cada um possui um padão, 
+podendno modificar nosso layout */
+*
+{
+margin:0;
+padding:0;
+box-sizing: 0;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url("cidade-invisivel.jpg");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    flex-direction: column;
+
+}
+header
+{
+    flex-grow: 1;
+    background-color: #000000AA;
+}
+
+main
+{
+    flex-grow: 5;
+    /* background-color: tomato; */
+    height: 70px;
+}
+
+footer
+{
+    flex-grow: 1;
+    height: 40px;
+    /* background-color: black; */
+}
