@@ -1,4 +1,4 @@
-/* Fazer esse geral para retirar os padões dos navegadores, tendo em vits que cada um possui um padão, 
+/* Fazer esse geral para retirar os padões dos navegadores, tendo em vista que cada um possui um padão, 
 podendno modificar nosso layout */
 *
 {
@@ -10,31 +10,123 @@ body
 {
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    background-image: url("cidade-invisivel.jpg");
+    background-color: #00000066;
+    background-blend-mode: darken;
+    background-image: url("Img/cidade-invisivel.jpg");
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
     flex-direction: column;
-
+    font-family: 'Karla', sans-serif;
+    color: white;
 }
 header
 {
-    flex-grow: 1;
+    height: 70px;
     background-color: #000000AA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    /* Ou podemos colocar padding: 0 (que representa cima e baixo) 200 (direita e esqueda); */
+}
+.links a
+{
+    color: white;
+    /* Tirar as linhas (sublinhado) do link */
+    text-decoration: none;
+    font-size: 20px;
+    /* Demora para acontecer a transição de cor, entre o branco e vermelhro (hover) */
+    transition: all 1s;
+    /* Tirar a possibilidade de selecionar */
+    user-select: none;
 }
 
+/* Ao passar o mouse em cima das palavras, elas mudma de cor */
+.links a:hover
+{
+    color: red;
+}
+
+.links ul
+{
+    display: flex;
+    gap: 20px;
+    /* Tirar as bolinhas da lista */
+    list-style-type: none;
+}
 main
 {
-    flex-grow: 5;
-    /* background-color: tomato; */
-    height: 70px;
+    flex-grow: 1;
+    padding: 13vw 10vw;
 }
 
+main h3
+{
+    font-size: 30px;
+}
+main h1
+{
+    font-size: 70px;
+}
+main p
+{
+    font-size: 25px;
+    font-weight: 200;
+    /* Largura máxima da "caixa de texto" */
+    max-width: 800px;
+}
+main a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: goldenrod;
+    margin-top: 30px;
+    /* Adiciona borda arredondada */
+    border-radius: 2px;
+    /* text-shadow: direita esquerda espumar cor; */
+    /* text-shadow: 2px 2px 0px black; */
+    transition: all 500ms;
+    user-select: none;
+}
+main a:hover
+{
+    border: solid 1px goldenrod;
+    background-color: black;
+}
 footer
 {
-    flex-grow: 1;
+   text-align: center;
     height: 40px;
-    /* background-color: black; */
+}
+.brabuleta
+{
+    position: absolute;
+    width: 60px;
+    top: 90vh;
+    left: 90vw;
+    filter: brightness(10%);
+    /* nome da animação que dei (voar) + tempo de animação (20s) + 
+    tipo de movimento (linear, ou seja, aumenta gradativamente a velocidade) +
+    quantidade de movimento (infinite)*/
+    animation: voar 20s linear infinite;
+}
+@keyframes voar 
+{
+    0%
+    {
+        transform: translate(0,0);
+    }
+    100%
+    {
+        transform: translate(-90vw, -90vh);
+    }
 }
