@@ -12,7 +12,7 @@ body
     height: 100vh;
     background-color: #00000066;
     background-blend-mode: darken;
-    background-image: url("Img/cidade-invisivel.jpg");
+    background-image: url("img/cidade-invisivel.jpg");
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,6 +54,7 @@ header
 .links ul
 {
     display: flex;
+    /* Dar espaço entre as palavras */
     gap: 20px;
     /* Tirar as bolinhas da lista */
     list-style-type: none;
