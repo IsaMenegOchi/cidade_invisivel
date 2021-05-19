@@ -21,6 +21,7 @@ body
     font-family: 'Karla', sans-serif;
     color: white;
 }
+
 header
 {
     height: 70px;
@@ -38,7 +39,7 @@ header
     /* Tirar as linhas (sublinhado) do link */
     text-decoration: none;
     font-size: 20px;
-    /* Demora para acontecer a transição de cor, entre o branco e vermelhro (hover) */
+    /* Demora para acontecer a transição de cor, entre o branco e vermelho (hover) */
     transition: all 1s;
     /* Tirar a possibilidade de selecionar */
     user-select: none;
@@ -74,6 +75,7 @@ main h1
 main p
 {
     font-size: 25px;
+    /* Tamnho da fonte */
     font-weight: 200;
     /* Largura máxima da "caixa de texto" */
     max-width: 800px;
@@ -99,13 +101,14 @@ main a
 }
 main a:hover
 {
+    /* Deixa a borda com a cor sólida, sem tranformção */
     border: solid 1px goldenrod;
     background-color: black;
 }
 footer
 {
    text-align: center;
-    height: 40px;
+    height: 30px;
 }
 .brabuleta
 {
@@ -121,6 +124,7 @@ footer
 }
 @keyframes voar 
 {
+    /* Quando estiver na posição de 0% */
     0%
     {
         transform: translate(0,0);
