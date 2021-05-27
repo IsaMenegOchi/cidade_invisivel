@@ -12,9 +12,13 @@ body{
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
+    background-color: #00000077;
+    color: white;
+    background-color: #00000033;
+    background-blend-mode: darken;
     
-    color: white;   
 }
+
 header{
     height: 12%;
     background-color: #00000077;
@@ -45,44 +49,89 @@ main{
     flex-grow: 1;
     /* 1º: top/em cima  2ºrigth/direita   
     3ºdown/baixo  4ºleft/esquerda */
-    padding: 80px 500px 130px 100px;
+    padding: 80px 600px 120px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 main h1{
+    position: relative;
     font-size: 750%;
-    opacity: 0,5;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-family: Helvetica, sans-serif;
+    /* / / Efumaçada*/
+    /* text-shadow: 10px 15px 0px black; */
 }
+
+/* Se colocar before, temos a palavra antes, se colocarmos after, temos a palavra depois */
+main h1::after{
+    content: "Curupira";
+    -webkit-text-stroke: 4px #000000DD;
+    color: transparent;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    /* Vai para trás */
+    z-index: -1;
+}
+
 main p{
-    font-size: 148%;
-    padding-right: 150px;
+    font-size: 150%;
+    padding-right: 70px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
 }
+
 hr{
     border-color: red;
-    height: 80px;
+    height: 60px;
 }
-nav.divisao{
+
+div.descricao{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction:row;
+    align-items: stretch;
     list-style-type: none;
 }
 
-main h3{
+div.descricao p{
+    width: 400px;
+    height: 190px;
+    padding-left: 90px;
+}
+
+div.descricao h3{
     transform: rotate(270deg); 
-    color: red; 
+    color: rgb(243, 60, 60); 
     font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 150px;
+    top: 360px;
 }
-nav.infos{
-    padding-top: 30px;
+
+div.infos{
+    padding-top: 50px;
+    padding-left: 90px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px;
 }
+
 .infos ul{
-    gap: 20px;
+    gap: 30px;
     list-style-type: none;
     display: flex;
-    /* justify-content:space-between;  */
     flex-direction: row;
 }
+
 footer{
     text-align: center;
     justify-content: center;
     height: 12%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
 }
