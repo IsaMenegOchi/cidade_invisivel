@@ -12,7 +12,7 @@ body
     height: 100vh;
     background-color: #00000066;
     background-blend-mode: darken;
-    background-image: url("img/cidade-invisivel.jpg");
+    background-image: url("Img/cidade-invisivel.jpg");
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
