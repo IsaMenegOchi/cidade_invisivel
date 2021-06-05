@@ -5,7 +5,9 @@ podendno modificar nosso layout */
 margin:0;
 padding:0;
 box-sizing: 0;
+list-style-type: none;
 }
+
 body
 {
     width: 100vw;
@@ -51,7 +53,7 @@ header
     color: red;
 }
 
-.links ul
+.links > ul
 {
     display: flex;
     /* Dar espaço entre as palavras */
