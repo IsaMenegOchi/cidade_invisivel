@@ -2,21 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: 0;
-    list-style-type: none;
+    list-style-type:none;
 }
 body{
     width: 100vw;
     height: 100vh;
     display:flex;
     flex-direction: column;
-    background-image: url("Img/curupira.png");
+    background-image: url("Img/corpoSeco.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    background-color: #00000077;
-    color: white;
+    background-color: #00000011;
     background-blend-mode: darken;
-    
+    color: white;
 }
 .logo img{
     width: 130px;
@@ -24,7 +23,7 @@ body{
 }
 
 header{
-    height: 12%;
+    height: 6%;
     background-color: #00000077;
     display: flex;
     justify-content: space-between;
@@ -48,13 +47,13 @@ header{
 .links > ul{
     display: flex;
     gap: 20px;
-    list-style-type: none;
 }
+
 main{
     flex-grow: 1;
     /* 1º: top/em cima  2ºrigth/direita   
     3ºdown/baixo  4ºleft/esquerda */
-    padding: 80px 600px 120px 80px;
+    padding: 60px 600px 60px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,21 +62,22 @@ main{
 
 main h1{
     position: relative;
-    font-size: 750%;
+    font-size: 600%;
     -webkit-text-stroke: 1px white;
     color: transparent;
     font-family: Helvetica, sans-serif;
     /* / / Efumaçada*/
     /* text-shadow: 10px 15px 0px black; */
+    padding-left: 40px ;
 }
 
 /* Se colocar before, temos a palavra antes, se colocarmos after, temos a palavra depois */
 main h1::after{
-    content: "Curupira";
+    content: "Corpo-Seco";
     -webkit-text-stroke: 4px #000000DD;
     color: transparent;
     position: absolute;
-    left: 3px;
+    left: 40px;
     top: 3px;
     /* Vai para trás */
     z-index: -1;
@@ -85,14 +85,14 @@ main h1::after{
 
 main p{
     font-size: 150%;
-    padding-right: 70px;
+    padding-right: 60px;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
 }
 
 hr{
     border-color: red;
-    height: 60px;
+    height: 85px;
 }
 
 div.descricao{
@@ -103,9 +103,10 @@ div.descricao{
 }
 
 div.descricao p{
-    width: 400px;
-    height: 190px;
-    padding-left: 180px;
+    width: 540px;
+    height: 220px;
+    padding-left: 200px;
+    padding-bottom: 30px;
 }
 
 div.descricao h3{
@@ -115,15 +116,19 @@ div.descricao h3{
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     left: 150px;
-    top: 360px;
+    top: 340px;
+}
+
+.infos p{
+    font-size: 25px;
 }
 
 div.infos{
-    padding-top: 50px;
     padding-left: 90px;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
-    font-size: 18px;
+    font-size: 16px;
+    padding-bottom: 90px;
 }
 
 .infos ul{

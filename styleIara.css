@@ -54,7 +54,7 @@ main{
     flex-grow: 1;
     /* 1º: top/em cima  2ºrigth/direita   
     3ºdown/baixo  4ºleft/esquerda */
-    padding: 80px 600px 120px 80px;
+    padding: 60px 600px 120px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ main{
 }
 
 main h1{
-    padding-right: 200px;
+    padding-right: 270px;
     position: relative;
     font-size: 750%;
     -webkit-text-stroke: 1px white;

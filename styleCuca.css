@@ -9,7 +9,7 @@ body{
     height: 100vh;
     display:flex;
     flex-direction: column;
-    background-image: url("Img/curupira.png");
+    background-image: url("Img/cuca.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -62,6 +62,7 @@ main{
 }
 
 main h1{
+    padding-right: 200px;
     position: relative;
     font-size: 750%;
     -webkit-text-stroke: 1px white;
@@ -73,7 +74,7 @@ main h1{
 
 /* Se colocar before, temos a palavra antes, se colocarmos after, temos a palavra depois */
 main h1::after{
-    content: "Curupira";
+    content: "Cuca";
     -webkit-text-stroke: 4px #000000DD;
     color: transparent;
     position: absolute;
@@ -103,8 +104,8 @@ div.descricao{
 }
 
 div.descricao p{
-    width: 400px;
-    height: 190px;
+    width: 420px;
+    height: 130px;
     padding-left: 180px;
 }
 
@@ -114,13 +115,14 @@ div.descricao h3{
     font-size: 35px;
     font-family: 'Open Sans', sans-serif;
     position: absolute;
-    left: 150px;
-    top: 360px;
+    left: 160px;
+    top: 350px;
 }
 
 div.infos{
-    padding-top: 50px;
-    padding-left: 90px;
+    padding-top: 90px;
+    padding-left: 130px;
+    padding-right: 90px;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 18px;
